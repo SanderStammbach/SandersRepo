@@ -1,0 +1,17 @@
+[Unit]
+Description=Conky Part 0
+After=display-manager.service
+
+[Service]
+Type=forking 
+ExecStartPre=/usr/bin/sleep 14
+ExecStart=/usr/bin/conky -c /home/sander/.conky/victorConky/victorConky/ArchLarge
+TimeoutSec=9000000
+[Install]
+WantedBy=default.target
+
+# Zuerst Pfad erstellen .config/systemed/user/
+#in dem erstellten Pfad dieses file einfügen
+
+#dan mit "systemctl --user enable conky-0.service", starten lassen, ohne anführungszeichen. 
+# Alternativ kann das script auch in /etc/systemed/system/ eingefügt werden und mit"systemctl enable conky-0.service" gestartet werden. 
