@@ -1,0 +1,8 @@
+gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
+
+
+https://www.linuxuprising.com/2021/06/gnome-how-to-disable-touchpad-when.html
+
+
+undo
+gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
