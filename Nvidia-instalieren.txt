@@ -1,0 +1,16 @@
+nvidia instalieren auf laptop.
+
+zuerst den Driver nvidia , nvidia-settings nvidia-utils instalieren.
+/etc/mkinitcpio.conf Modules einfügen.
+
+/etc/default/grub konfigurieren.
+
+grub-mkconfig -o /boot/grub/grub.cfg 
+
+aus dem AUR envicontrol instlieren.
+
+GnomeExtensiion GPU profile selector 
+
+sudo envicontrol --switch nvidia
+
+gnome shell läuft nur mit xorg auf der nvdia
